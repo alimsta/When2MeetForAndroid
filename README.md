@@ -1,4 +1,3 @@
-An Android rendition of when2meet.com
 # When2MeetForAndroid
 Worked in a team of 4 to develop When2Meet for Android. Adhered to Agile methods (Scrum) and reported to a project manager. User manual and technical documentation with screenshots included as PDF.
 
