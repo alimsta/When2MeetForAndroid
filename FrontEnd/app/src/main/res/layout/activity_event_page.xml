@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spring2018.cis350.group7.when2meetmobile.EventPage">
+
+    <Button
+        android:id="@+id/display_guests_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onViewGuestsButtonClick"
+        android:text="@string/view_guests"
+        app:layout_constraintBottom_toTopOf="@+id/leave_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/leave_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onLeaveButtonClick"
+        android:text="@string/leave_event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/event_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="                "
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonNonusers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onInviteNonusersButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/leave_button"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/inviteNonusers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Invite Nonuser"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNonusers"
+        app:layout_constraintEnd_toStartOf="@+id/display_guests_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/event_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="                "
+        app:layout_constraintEnd_toEndOf="@+id/event_name_text"
+        app:layout_constraintStart_toStartOf="@+id/event_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/event_name_text" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="-2dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/event_name_text">
+
+        <TableRow android:paddingBottom="5dip">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/dateLabel0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="dateLabel0"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/dateLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="dateLabel1"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/dateLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="dateLabel2"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/dateLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="dateLabel3"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel0"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="00"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="01"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="02"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="03"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel1"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="10"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="11"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="12"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="13"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel2"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="20"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="21"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="22"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="23"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel3"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="30"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="31"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="32"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="33"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel4"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="40"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="41"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="42"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="43"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel5"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="50"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="51"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="52"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="53"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel6"
+                android:text="        " />
+
+            <TextView
+                android:id="@+id/fillBox60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="60"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="61"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="62"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="63"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel7"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="70"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="71"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="72"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="73"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel8"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="80"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="81"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="82"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="83"
+                android:text="                " />
+        </TableRow>
+
+        <TableRow android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="timeLabel9"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="90"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="91"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="92"
+                android:text="                " />
+
+            <TextView
+                android:id="@+id/fillBox93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:tag="93"
+                android:text="                " />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="43dp"
+        android:onClick="shiftLeft"
+        android:text="\u21da"
+        app:layout_constraintBottom_toBottomOf="@+id/button7"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:onClick="shiftRight"
+        android:text="\u21db"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:onClick="shiftUp"
+        android:text="\u21d1"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:onClick="shiftDown"
+        android:text="\u21d3"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onResponseButtonClick"
+        android:text="Switch Res"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onSubmitTimeSelections"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

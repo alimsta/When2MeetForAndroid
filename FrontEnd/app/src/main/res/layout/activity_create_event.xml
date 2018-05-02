@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spring2018.cis350.group7.when2meetmobile.CreateEvent">
+
+    <EditText
+        android:id="@+id/eventname"
+        android:layout_width="291dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Event Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/specific_dates"
+        android:layout_width="73dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/specific_dates"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventname" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/specific_dates"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tuesday"
+        app:layout_constraintEnd_toStartOf="@+id/specific_dates"
+        app:layout_constraintTop_toBottomOf="@+id/eventname" />
+
+    <ToggleButton
+        android:id="@+id/saturday"
+        android:layout_width="34dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/days_of_week_toggle"
+        android:text="ToggleButton"
+        android:textOff="S"
+        android:textOn="S"
+        app:layout_constraintEnd_toStartOf="@+id/sunday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/friday"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates" />
+
+    <ToggleButton
+        android:id="@+id/monday"
+        android:layout_width="34dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/days_of_week_toggle"
+        android:text="ToggleButton"
+        android:textOff="M"
+        android:textOn="M"
+        app:layout_constraintEnd_toStartOf="@+id/tuesday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates"
+        android:layout_marginLeft="8dp" />
+
+    <ToggleButton
+        android:id="@+id/tuesday"
+        android:layout_width="34dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/days_of_week_toggle"
+        android:text="ToggleButton"
+        android:textOff="T"
+        android:textOn="T"
+        app:layout_constraintEnd_toStartOf="@+id/wednesday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/monday"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates" />
+
+    <ToggleButton
+        android:id="@+id/wednesday"
+        android:layout_width="34dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/days_of_week_toggle"
+        android:text="ToggleButton"
+        android:textOff="W"
+        android:textOn="W"
+        app:layout_constraintEnd_toStartOf="@+id/thursday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates" />
+
+    <ToggleButton
+        android:id="@+id/thursday"
+        android:layout_width="34dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/days_of_week_toggle"
+        android:text="ToggleButton"
+        android:textOff="T"
+        android:textOn="T"
+        app:layout_constraintEnd_toStartOf="@+id/friday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates" />
+
+    <ToggleButton
+        android:id="@+id/friday"
+        android:layout_width="34dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/days_of_week_toggle"
+        android:text="ToggleButton"
+        android:textOff="F"
+        android:textOn="F"
+        app:layout_constraintEnd_toStartOf="@+id/saturday"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thursday"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates" />
+
+    <ToggleButton
+        android:id="@+id/sunday"
+        android:layout_width="34dp"
+        android:layout_height="122dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/days_of_week_toggle"
+        android:text="ToggleButton"
+        android:textOff="S"
+        android:textOn="S"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/saturday"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/submit_dates"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/create_event"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/end_date_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/submit_dates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_date_display"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/usernames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/submit_dates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_hour"
+        app:layout_constraintVertical_bias="0.871" />
+
+    <EditText
+        android:id="@+id/start_date_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specific_dates" />
+
+    <Spinner
+        android:id="@+id/end_hour"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/start_hour"
+        app:layout_constraintTop_toBottomOf="@+id/end_hour_text" />
+
+    <Spinner
+        android:id="@+id/start_hour"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/end_hour"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_hour_text" />
+
+    <TextView
+        android:id="@+id/start_hour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:text="@string/start_hour"
+        app:layout_constraintBottom_toBottomOf="@+id/end_hour_text"
+        app:layout_constraintEnd_toStartOf="@+id/end_hour_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/end_hour_text"
+        android:layout_marginRight="7dp" />
+
+    <TextView
+        android:id="@+id/end_hour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="183dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="183dp"
+        android:text="@string/end_hour"
+        app:layout_constraintBottom_toBottomOf="@+id/submit_dates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/start_hour_text"
+        app:layout_constraintTop_toTopOf="@+id/saturday"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginTop="358dp"
+        android:text="Insert usernames to be invited, separated by a space:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/submit_dates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/expiryDate"
+        android:layout_width="112dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="MM/DD/YYYY"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_hour_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturday"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="91dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Set Expiration:"
+        app:layout_constraintBottom_toTopOf="@+id/start_hour_text"
+        app:layout_constraintEnd_toStartOf="@+id/expiryDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuesday" />
+
+    <!--<com.savvi.rangedatepicker.CalendarPickerView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/calendar_view"-->
+    <!--android:layout_width="371dp"-->
+    <!--android:layout_height="382dp"-->
+    <!--android:clipToPadding="false"-->
+    <!--android:paddingBottom="16dp"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:scrollbarStyle="outsideOverlay"-->
+    <!--app:tsquare_dividerColor="@color/gray"-->
+    <!--app:tsquare_headerTextColor="@color/colorAccent"-->
+    <!--tools:layout_editor_absoluteX="7dp"-->
+    <!--tools:layout_editor_absoluteY="131dp" />-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spring2018.cis350.group7.when2meetmobile.EventPageResponses">
+
+    <TextView
+        android:id="@+id/event_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonNonusers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:onClick="onInviteNonusersButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:id="@+id/inviteNonusers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Invite Nonuser"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNonusers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/event_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/event_name_text"
+        app:layout_constraintStart_toStartOf="@+id/event_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/event_name_text" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="129dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/event_name_text"
+        android:layout_marginRight="8dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/dateLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/dateLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/dateLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/dateLabel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="00"/>
+
+            <TextView
+                android:id="@+id/fillBox01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="01"/>
+
+            <TextView
+                android:id="@+id/fillBox02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="02"/>
+
+            <TextView
+                android:id="@+id/fillBox03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="03"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="10"/>
+
+            <TextView
+                android:id="@+id/fillBox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="11"/>
+
+            <TextView
+                android:id="@+id/fillBox12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="12"/>
+
+            <TextView
+                android:id="@+id/fillBox13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="13"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="20"/>
+
+            <TextView
+                android:id="@+id/fillBox21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="21"/>
+
+            <TextView
+                android:id="@+id/fillBox22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="22"/>
+
+            <TextView
+                android:id="@+id/fillBox23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="23"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="30"/>
+
+            <TextView
+                android:id="@+id/fillBox31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="31"/>
+
+            <TextView
+                android:id="@+id/fillBox32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="32"/>
+
+            <TextView
+                android:id="@+id/fillBox33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="33"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="40"/>
+
+            <TextView
+                android:id="@+id/fillBox41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="41"/>
+
+            <TextView
+                android:id="@+id/fillBox42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="42"/>
+
+            <TextView
+                android:id="@+id/fillBox43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="43"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="50"/>
+
+            <TextView
+                android:id="@+id/fillBox51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="51"/>
+
+            <TextView
+                android:id="@+id/fillBox52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="52"/>
+
+            <TextView
+                android:id="@+id/fillBox53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="53"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="60"/>
+
+            <TextView
+                android:id="@+id/fillBox61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="61"/>
+
+            <TextView
+                android:id="@+id/fillBox62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="62"/>
+
+            <TextView
+                android:id="@+id/fillBox63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="63"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="70"/>
+
+            <TextView
+                android:id="@+id/fillBox71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="71"/>
+
+            <TextView
+                android:id="@+id/fillBox72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="72"/>
+
+            <TextView
+                android:id="@+id/fillBox73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="73"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="80"/>
+
+            <TextView
+                android:id="@+id/fillBox81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="81"/>
+
+            <TextView
+                android:id="@+id/fillBox82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="82"/>
+
+            <TextView
+                android:id="@+id/fillBox83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="83"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:id="@+id/timeLabel9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fillBox90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="90"/>
+
+            <TextView
+                android:id="@+id/fillBox91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="91"/>
+
+            <TextView
+                android:id="@+id/fillBox92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="92"/>
+
+            <TextView
+                android:id="@+id/fillBox93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="TextView"
+                android:tag="93"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="43dp"
+        android:text="\u21da"
+        android:onClick="shiftLeft"
+        app:layout_constraintBottom_toBottomOf="@+id/button7"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:text="\u21db"
+        android:onClick="shiftForward"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:text="\u21d1"
+        android:onClick="shiftUp"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:text="\u21d3"
+        android:onClick="shiftDown"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="My Responses"
+        android:onClick="onMyResponseClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

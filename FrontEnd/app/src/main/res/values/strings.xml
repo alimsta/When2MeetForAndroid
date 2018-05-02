@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">When2MeetMobile</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="event_name">Event Name</string>
+    <string name="welcome">Welcome!</string>
+    <string name="signUp">Sign up</string>
+    <string name="specific_dates">Specific Dates:</string>
+
+    <!-- Strings for days of the week -->
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="f">F</string>
+    <string name="create_event">Create Event</string>
+
+    <!-- Strings for Hour Selection -->
+    <string-array name="start_hours_selection">
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>1500</item>
+        <item>1600</item>
+        <item>1700</item>
+        <item>1800</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>2100</item>
+        <item>2200</item>
+        <item>2300</item>
+        <item>2400</item>
+    </string-array>
+    <string name="start_hour">Start Hour</string>
+    <string name="end_hour">End Hour</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="view_guests">View Guests</string>
+    <string name="leave_event">Leave Event</string>
+    <string name="invite">Invite</string>
+    <string name="title_activity_event_page_admin">EventPageAdmin</string>
+    <string name="title_activity_invites_page">InvitesPage</string>
+
+    <string name="invite_page_accept">Accept</string>
+    <string name="invite_page_decline">Decline</string>
+    <string name="invite_page_wait">Wait</string>
+
+</resources>
