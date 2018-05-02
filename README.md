@@ -8,6 +8,6 @@ Worked in a team of 4 to develop When2Meet for Android. Adhered to Agile methods
 * Hamburger menu for seamless app navigation
 
 ## Tools:
-Android Studio (Java), MongoDB [mongoose ODM], Node.js
+Android Studio (Java), MongoDB [mongoose ODM], node.js [Express]
 
 
